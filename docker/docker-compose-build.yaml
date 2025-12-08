@@ -14,8 +14,6 @@ services:
     # tty: true
     restart: unless-stopped
     env_file: ../.env
-    environment:
-      - TZ=Europe/Berlin
     ports:
       - "8080:8080"  # Health check port
     healthcheck:
